@@ -15,9 +15,10 @@
           <img src="logo.webp" alt="logo">
           <span>Sourav Deka</span>
           </div>
+          <div class="hamburger">☰</div>
           <nav>
-        <ul>
-          <li><a href="#home">HOME</a></li>
+        <ul class="nav-links">
+          <li><a href="#about">HOME</a></li>
           <li><a href="#about">ABOUT ME</a></li>
           <li><a href="#projects">PROJECTS</a></li>
           <li><a href="#contact">CONTACT ME</a></li>
@@ -25,7 +26,7 @@
       </nav>
     </div>
   </header>
-<section class="about-section" id="about" id="home">
+<section class="about-section" id="about">
   <h2>About Me</h2>
   <div class="about-content">
     <img src="logo.webp" alt="Sourav">
@@ -37,7 +38,7 @@
       <br><br>
       When I'm not debugging code or solving accounting process, I love to build digital stuff - like this portfolio! I'm always learning something new and dreaming big.
       <br><br>
-      Let's build something great together.(Adding working suggestion page soon)
+      Let's build something great together.
       </p>
     </div>
   </div>
@@ -91,6 +92,14 @@
     <a href="https://github.com/Sourav609" target="_blank">💻 GitHub</a>
     <a href="https://www.instagram.com/sourav_lx9?igsh=MTVrb3htNjhjZWY1Yw==" target="_blank">📸 Instagram</a>
   </div>
+</section>
+<section id="suggestions" class="suggestion-section">
+  <h2>Anonymous Suggestions</h2>
+  <form id="suggestion-form">
+    <textarea id="suggestion-text" placeholder="Leave your feedback or suggestion..." required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="suggestion-list"></div>
 </section>
   <script src="main.js"></script>
 </body>
