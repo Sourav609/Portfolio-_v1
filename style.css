@@ -1,8 +1,7 @@
 body {
-    color: white;
-    background-color: rgb(30, 40, 60);
-    margin:0;
-}
+  color: white;
+  background-color: rgb(30, 40, 60);
+  margin: 0; }
 
 header {
   position: sticky;
@@ -10,157 +9,164 @@ header {
   z-index: 1000;
   background-color: rgb(30, 40, 60);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  
 }
 
-nav {
-    background-color: rgb(0, 0, 128);
-    padding:10px 20px;
-}
-
-.nav nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 128);
+  position: relative; }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: orange;
-    font-size: 20px;
-    font-weight: bold;
-    height: px;
-    width: px;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px; color: orange;
+  font-size: 20px;
+  font-weight: bold;
+  
 }
 
 .logo img {
-    height: 30px;
-    width: auto;
+  height: 30px;
+  width: auto;
+  
 }
 
-.nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    color: orange;
-    justify-content: right;
-    gap: 30px;
-    padding:0;
-    margin: 0;
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
 }
 
-.nav ul li {
-    list-style: none;
+.nav-links li a {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: inline-block;
+  white-space: nowrap;
+  
 }
 
-.nav ul li a {
-    color: orange;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
-    display: inline-block;
-    white-space: nowrap;
+.nav-links li a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
+  
 }
 
-.nav ul li a:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(256, 0, 0);
-}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: orange;
+  cursor: pointer; }
 
 .about-section {
-    color: rgb(224, 224, 224);
-    padding: 80px 20px;
-    text-align: center;
-}
+  color: rgb(224, 224, 224);
+  padding: 80px 20px;
+  text-align: center; }
 
 .about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: rgb(255, 165, 0);
-    display: inline-block;
-    padding-bottom: 8px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: rgb(255, 165, 0);
+  display: inline-block;
+  padding-bottom: 8px;
+  
 }
 
 .about-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    max-width: 1000px;
-    margin: auto;
-    text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
+  
 }
 
 .about-content img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid orange;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid orange;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  
 }
 
 .about-text {
-    max-width: 500px;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: rgb(224, 224, 224);
-}
-
+  max-width: 500px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgb(224, 224, 224); }
 .skills-section {
-    color: rgb(224, 224, 224);
-    padding: 80px 20px;
-    text-align: center;
+  color: rgb(224, 224, 224);
+  padding: 80px 20px;
+  text-align: center;
+  
 }
 
 .skills-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: orange;
-    display: inline-block;
-    padding: 8px;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: orange;
+  display: inline-block;
+  padding: 8px;
+  
 }
 
 .skill-list {
-    display: flex;
-    flex-direction: column;
-    max-width: 700px;
-    margin: auto;
-    gap: 25px;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: auto;
+  gap: 25px;
+  
 }
 
 .skill span {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
-    display: inline-block;
-    color: orange;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: inline-block;
+  color: orange;
+  
 }
 
 .bar {
-    width: 100%;
-    height: 12px;
-    background-color: rgb(50, 60, 80);
-    border-radius: 6px;
-    overflow: hidden;
+  width: 100%;
+  height: 12px;
+  background-color: rgb(50, 60, 80);
+  border-radius: 6px;
+  overflow: hidden;
+  
 }
+
 .fill {
-    height: 100%;
-    background-color: orange;
-    border-radius: 6px;
-    transition: width 1s ease;
+  height: 100%;
+  background-color: orange;
+  border-radius: 6px;
+  transition: width 1s ease;
+  
 }
+
 .projects-section {
   background-color: rgb(30, 40, 60);
   color: rgb(224, 224, 224);
   padding: 80px 20px;
   text-align: center;
+  
 }
 
 .projects-section h2 {
@@ -170,6 +176,7 @@ nav {
   border-bottom: 2px solid rgb(255, 165, 0);
   display: inline-block;
   padding-bottom: 8px;
+  
 }
 
 .project-list {
@@ -178,6 +185,7 @@ nav {
   gap: 30px;
   max-width: 900px;
   margin: auto;
+  
 }
 
 .project-card {
@@ -186,39 +194,43 @@ nav {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   text-align: left;
+  
 }
 
 .project-card h3 {
   color: rgb(255, 165, 0);
   margin-bottom: 10px;
+  
 }
 
 .project-card p {
   margin-bottom: 10px;
   font-size: 1.05rem;
-  line-height: 1.6;
-}
+  line-height: 1.6; }
 
-.project-card a {
+.project-card a { 
   display: inline-block;
   margin-top: 10px;
   color: white;
   background-color: rgb(255, 165, 0);
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 8px 16px; border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
+  
 }
 
 .project-card a:hover {
   background-color: rgb(255, 140, 0);
+  
 }
+
 .contact-section {
   background-color: rgb(30, 40, 60);
   color: rgb(224, 224, 224);
   padding: 80px 20px;
   text-align: center;
+  
 }
 
 .contact-section h2 {
@@ -228,12 +240,14 @@ nav {
   border-bottom: 2px solid rgb(255, 165, 0);
   display: inline-block;
   padding-bottom: 8px;
+  
 }
 
 .contact-section p {
   font-size: 1.1rem;
   margin-bottom: 30px;
   color: rgb(200, 200, 200);
+  
 }
 
 .social-links {
@@ -241,6 +255,7 @@ nav {
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  
 }
 
 .social-links a {
@@ -249,32 +264,109 @@ nav {
   font-size: 1.2rem;
   font-weight: bold;
   transition: color 0.3s ease;
+  
 }
 
 .social-links a:hover {
   color: rgb(255, 140, 0);
-  text-decoration: underline;
+  text-decoration: underline; }
+
+ @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 128);
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+  
+  .nav-links li a {
+    font-size: 1.1rem;
+  }
+  
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  .nav.transparent-bg {
+    background-color: rgba(0, 0, 128, 0.6); /* semi-transparent */
+    backdrop-filter: blur(8px); /* optional blur effect */
+    transition: background-color 0.3s ease;
+  }
+}
+.suggestion-section {
+  padding: 60px 20px;
+  background-color: rgb(30, 40, 60);
+  color: white;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-  .nav nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
+.suggestion-section h2 {
+  color: orange;
+  margin-bottom: 20px;
+}
 
-  .logo {
-    margin-bottom: 10px;
-  }
+#suggestion-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px;
+  margin: auto;
+}
 
-  .nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    width: 100%;
-  }
+#suggestion-text {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+  font-size: 1rem;
+}
 
-  .nav ul li a {
-    padding-left: 10px;
-  }
+#suggestion-form button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#suggestion-form button:hover {
+  background-color: darkorange;
+}
+
+#suggestion-list {
+  margin-top: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.suggestion-item {
+  background-color: rgb(40, 50, 70);
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: rgb(224, 224, 224);
 }
